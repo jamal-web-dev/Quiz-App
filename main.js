@@ -13,46 +13,106 @@ startButton.addEventListener("click", ()=>{
 
 // SAVING QUESTIONS IN ARRAY:
 const questions = [
-    {
-      qustion: "What is a noun?",
-      options: [
-        "A noun is a name of Dog",
-        "A noun means present happening",
-        "A noun is a name of any person animal place or things",
-        "Noun is the name of my friend"
-      ],
-      ans: "A noun is a name of any person animal place or things"
-    },
-    {
-      qustion: "Nigeria is a ______",
-      options: [
-        "Country",
-        "State",
-        "City",
-        "Village"
-      ],
-      ans: "Country"
-    },
-    {
-      qustion: "What is 4 + 4",
-      options: [
-        "8",
-        "7",
-        "44",
-        "9"
-      ],
-      ans: "8"
-    },
-    {
-      qustion: "What is Ramadan",
-      options: [
-        "Month of Fasting",
-        "Days of Prayer",
-        "Days of Eating food",
-        "For playing"
-      ],
-      ans: "Month of Fasting"
-    }
+  {
+    qustion: "Which planet is known as the Red Planet?",
+    options: [
+      "Earth",
+      "Mars",
+      "Venus",
+      "Jupiter"
+    ],
+    ans: "Mars"
+  },
+  {
+    qustion: "What is the capital city of Nigeria?",
+    options: [
+      "Lagos",
+      "Abuja",
+      "Kano",
+      "Ibadan"
+    ],
+    ans: "Abuja"
+  },
+  {
+    qustion: "Which language runs in the browser for web pages?",
+    options: [
+      "Python",
+      "Java",
+      "JavaScript",
+      "C++"
+    ],
+    ans: "JavaScript"
+  },
+  {
+    qustion: "How many days are there in a leap year?",
+    options: [
+      "365",
+      "366",
+      "364",
+      "360"
+    ],
+    ans: "366"
+  },
+  {
+    qustion: "Which gas do humans need to breathe to survive?",
+    options: [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    ans: "Oxygen"
+  },
+  {
+    qustion: "What is the result of 9 × 7?",
+    options: [
+      "63",
+      "56",
+      "72",
+      "49"
+    ],
+    ans: "63"
+  },
+  {
+    qustion: "Which ocean is the largest in the world?",
+    options: [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+    ],
+    ans: "Pacific Ocean"
+  },
+  {
+    qustion: "What device is used to measure temperature?",
+    options: [
+      "Barometer",
+      "Thermometer",
+      "Speedometer",
+      "Altimeter"
+    ],
+    ans: "Thermometer"
+  },
+  {
+    qustion: "Which continent is Nigeria located in?",
+    options: [
+      "Asia",
+      "Europe",
+      "Africa",
+      "South America"
+    ],
+    ans: "Africa"
+  },
+  {
+    qustion: "Which part of the computer is considered the brain?",
+    options: [
+      "Hard Drive",
+      "RAM",
+      "CPU",
+      "Monitor"
+    ],
+    ans: "CPU"
+  }
 ];
 
 // RENDERING QUESTIONS FROM QUESTIONS ARRAY
@@ -108,7 +168,7 @@ function showQuestion(){
 
   if(currentQuestionIndex === questions.length - 1){
     nextButton.textContent = "Submit";
-    clearInterval(timeInterval);
+    // clearInterval(timeInterval);
     // timerElement.innerText = "00";
   } else{
     nextButton.textContent = "Next";
