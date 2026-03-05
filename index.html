@@ -15,20 +15,26 @@
             <img src="images/logo.png" alt="" class="logo">
             <div class="time">
                 <img src="images/watch.png" alt="">
-                <span>00</span>
+                <span class="timer">00</span>
             </div>
         </header>
 
-        <div class="container">
-            <div class="row">
+        <div class="start-screen">
+            <img src="images/welcome-person.png" alt="" class="welcome-person">
+            <h1>Welcome To Quizo</h1>
+            <p>Click on the button bellow to start the test.</p>
+            <button class="start">Start</button>
+        </div>
+
+        <div class="container quiz-screen">
                 <div class="col">
                     <h1 class="question">What kind of services you are quiz?</h1>
                     <div class="question-number">
-                        Question <span>1</span> to <span>5</span>
+                        Question <span class="currentNumber">1</span> to <span class="totalNumber">5</span>
                     </div>
                     <ul class="answer-box">
-                        <li>
-                            <input type="radio">
+                        <li class="choose">
+                            <input type="radio" checked>
                             Well organized and Easy
                         </li>
                         <li>
@@ -49,8 +55,18 @@
                         <button class="next">Next</button>
                     </div>
                 </div>
+        </div>
+
+        <div class="result-screen">
+            <div class="result-circle">
+                <span>4</span>/ <span>5</span>
             </div>
+            <h2>Your Score</h2>
+            <p class="success-msg">Congratulation! Greate Job!</p>
+            <button class="restart">Restart</button>
         </div>
     </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
