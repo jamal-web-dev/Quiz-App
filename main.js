@@ -195,6 +195,7 @@ questionsNumber.innerHTML = currentQuestionsNumber;
 function showNextQuestion(){
   if(currentQuestionIndex === questions.length - 1){
     calculateScore();
+    clearInterval(timeInterval);
     quizScreen.style.display = "none";
     resultScreen.style.display = "flex";
     return;
